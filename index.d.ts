@@ -1,9 +1,11 @@
-declare class BloomFilterNative{
-    constructor(errorRate: number, numberFiles: number);
+declare class HllNative{
+    constructor();
     add(data: string):void;
-    lookup(data: string):boolean;
+    merge(hll: HllNative):void;
+    cardinality():number;
+    deserialize(date:string):void;
 }
 
-declare module "bloom-filter-native"{
-    export = BloomFilterNative
+declare module "hll-native"{
+    export = HllNative
 }
