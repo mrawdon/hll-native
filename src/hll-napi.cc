@@ -61,7 +61,7 @@ void HllNative::add(const Napi::CallbackInfo& info) {
 void HllNative::merge(const Napi::CallbackInfo& info) {
   const Napi::Env env = info.Env();
 
-  Hll* hllObj = Napi::ObjectWrap<Hll>::Unwrap(info[0].As<Napi::Object>());
+  HllNative* hllObj = Napi::ObjectWrap<HllNative>::Unwrap(info[0].As<Napi::Object>());
   
   this->hll->merge(*hllObj->hll);
 }
