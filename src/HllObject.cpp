@@ -138,6 +138,7 @@ std::string HllObject::serialize() {
 }
 
 void HllObject::deserialize(const char* data) {
+	init();
 	double bufferLen = pow(2.0, (double)getP());
 	mergeArray[0] = hllObject;
 	deserializeHLLObject((char**)mergeArray, data, bufferLen);
