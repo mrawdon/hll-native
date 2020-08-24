@@ -1,0 +1,30 @@
+{
+  "name": "hll-native",
+  "version": "0.1.1",
+  "description": "A native implementation of HLL",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "install": "node-gyp-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrawdon/hll-native.git"
+  },
+  "keywords": [
+    "bff",
+    "filter",
+    "bloom",
+    "bloomfilter"
+  ],
+  "author": "Mike Rawdon <mrawdon@gmail.com>",
+  "homepage": "https://github.com/mrawdon/hll-native#readme",
+  "dependencies": {
+    "node-addon-api": "^1.2.0",
+    "node-gyp-build": "^3.3.0"
+  },
+  "gypfile": true
+}
