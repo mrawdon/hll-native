@@ -1,6 +1,6 @@
 {
   "name": "@mrawdon/hll-native",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A native implementation of HLL",
   "main": "index.js",
   "directories": {
